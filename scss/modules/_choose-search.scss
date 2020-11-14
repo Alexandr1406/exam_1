@@ -1,0 +1,21 @@
+.choose-search {
+    background: #333333;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 95px 65px 120px;
+        text-align: center;
+    }
+
+    &__icon {
+        @include size(60px);
+        margin-bottom: 35px;
+    }
+
+    &__text {
+        font-size: 36px;
+        letter-spacing: 3.6;
+        color: #e8e8e8;
+    }
+}

@@ -1,0 +1,46 @@
+.choose {
+    background: url(../images/choose.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 100vh;
+    
+    
+    &__wrapper {
+        display: flex;
+        
+    }
+    &__info{
+        width: 50%;
+    }
+
+    &__title {
+        margin-top: 200px;
+        font-size: 36px;
+        letter-spacing: 3.6px;
+        margin-bottom: 65px;
+    }
+
+    &__text {
+        font: 400 16px/26px $font-jos;
+        margin-bottom: 35px;
+
+        &--last {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__img {
+        @include size(350px, 220px);
+        margin-top: 180px;
+        margin-left: 65px;
+        position: relative;
+
+        &--1 {
+            margin-bottom: 5px;
+        }
+
+        &--2 {
+            @include pos(absolute, $r:-125px);
+        }
+
+    }
+}

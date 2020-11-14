@@ -1,0 +1,45 @@
+.about {
+    background: url(../images/travel.jpg) no-repeat top center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+
+
+    &__title {
+        padding-top: 120px;
+        font-size: 36px;
+        margin-bottom: 100px;
+    }
+
+    &__info {
+        display: flex;
+        background: #333333;
+        text-align: left;
+    }
+
+    &__img {
+        max-width: 440px;
+    }
+
+    &__text {
+        font-family: $font-jos;
+        padding: 50px 50px 0 60px;
+        
+        &--author {
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-bottom: 35px;            
+        }
+
+        &--quote {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    &__icon {
+        @include size(15px);
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,111 @@
+.header {
+    //border: 15px solid #fff;
+    border-bottom: none;
+    background: url(../images/header.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    
+    &__title {
+        font: 700 48px $font-jos;
+        text-transform: uppercase;
+        letter-spacing: 4.8px;
+        padding-top: 280px;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font: 400 22px $font-jos;
+        letter-spacing: 6.82px;
+        margin-bottom: 55px;
+    }
+
+
+    &__search {
+        margin: 0 auto;
+        @include size (650px, 60px);
+        background: #fff;
+        margin-left: 230px;
+        border: 2px solid #fff;
+        margin-bottom: 120px;
+        
+    }
+
+    &__field {        
+        border: none;
+        max-height: 100%;
+        width: 76%;
+        font-family: $font-jos;
+        background-color: #fff;
+        color: #999999;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        text-align: center;
+        
+
+        &--btn {
+            width: 23%;
+            height: 100%;
+            border: none;
+            font-family: $font;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #fff;
+            background-color: #5474fd;
+            cursor: pointer;
+        }
+    }
+
+    &__icon {
+        @include size(20px);
+    }
+
+    &__scroll {
+        font-family: $font-jos;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        font-weight: 300;
+    }
+
+
+
+    &__nav {
+        @include size(100%, 80px);
+        background: #5474fd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        font: 700 24px $font-jos;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+    }
+
+    &__menu {
+        display: flex;      
+
+        &--item {
+            margin-right: 30px;
+            font-size: 14px;  
+            transition: all .3s;                     
+            
+            &:hover {
+                transform: scale(1.2);
+        
+            }
+        }
+
+        &--link {
+            text-transform: uppercase;
+            
+
+            
+        }
+    }
+
+  
+}

@@ -1,0 +1,38 @@
+.footer {
+    background-color: #232323;
+    text-align: center;
+    padding-bottom: 1px;
+
+    &__title {
+        font: 700 24px $font-jos;
+        letter-spacing: 3.36px;
+        text-transform: uppercase;
+        padding-top: 120px;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 16px;
+        letter-spacing: 1.6px;
+        font-family: $font-jos;
+        margin-bottom: 30px;
+    }
+
+
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        width: 100%;
+        
+    }
+
+    &__item {
+        margin-right: 25px;
+    }
+
+    &__icon {
+        @include size(15px);
+    }
+}
